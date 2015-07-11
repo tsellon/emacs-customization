@@ -1,4 +1,6 @@
 * Questions
+** Git mode
+*** TODO How to get the git.el path automatically, instead of setting it manually.
 ** Server mode
 *** What's the best way to use it?
 *** Should I start an emacs daemon on mac and remap emacs in bash to "emacsclient -c"?
