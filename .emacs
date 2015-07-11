@@ -86,7 +86,11 @@
                                (interactive)
                                (scroll-up 1)))
   (defun track-mouse (e))
-  (setq mouse-sel-mode t)
-)
+  (setq mouse-sel-mode t))
+
+;; Git
+(add-to-list 'load-path "/usr/local/Cellar/git/2.4.5/share/git-core/contrib/emacs")
+(require 'git)
+(require 'git-blame)
 
 (server-start)
