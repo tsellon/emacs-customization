@@ -1,0 +1,8 @@
+* Questions
+** Server mode
+*** What's the best way to use it?
+*** Should I start an emacs daemon on mac and remap emacs in bash to "emacsclient -c"?
+    "emacs --daemon" to start the emacs server daemon
+    "emacsclient -c" (or -t) to connect a client
+    assign "emacsclient" to EDITOR in the environment
+*** Any reason I'd ever want multiple server instances?
