@@ -98,5 +98,7 @@
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
+(setq ido-create-new-buffer 'always) ;; other options are 'prompt and 'never
+(setq ido-file-extensions-order '(".org" ".txt" ".py" ".h" ".cpp" ".c" ".emacs" ".xml" ".cfg"))
 
 (server-start)
