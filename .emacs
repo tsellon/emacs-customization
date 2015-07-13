@@ -40,7 +40,9 @@
 
 ;; some basic settings
 (put 'downcase-region 'disabled nil)
-
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (desktop-save-mode 1)
@@ -50,10 +52,9 @@
 (setq visible-bell t)
 
 ;; My personal keys
+(global-set-key [f1] 'shell)
 (global-set-key [f5] 'revert-buffer)
-(global-set-key (kbd "<f4>") 'query-replace)
 (global-set-key [f7] 'toggle-truncate-lines)
-(global-set-key (kbd "C-o") 'backward-kill-word)
 
 ;; Org-mode stuff
 ;(setq org-default-notes-file (concat org-directory "/notes.org"))
@@ -92,5 +93,10 @@
 (add-to-list 'load-path "/usr/local/Cellar/git/2.4.5/share/git-core/contrib/emacs")
 (require 'git)
 (require 'git-blame)
+
+;; Ido
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
 
 (server-start)

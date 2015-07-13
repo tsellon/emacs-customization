@@ -1,3 +1,11 @@
+* Educational Resources
+** Master Emacs
+   https://www.masteringemacs.org/
+*** Ido
+    https://www.masteringemacs.org/article/introduction-to-ido-mode
+    Mode for better auto-completion in the mini-buffer.
+**** TODO Need to go back and play with "ido-ignore-extensions"
+   
 * Questions
 ** Git mode
 *** TODO How to get the git.el path automatically, instead of setting it manually.
