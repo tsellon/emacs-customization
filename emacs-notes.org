@@ -1,10 +1,14 @@
 * Educational Resources
-** Master Emacs
+** Mastering Emacs
    https://www.masteringemacs.org/
+*** Reading list
+    https://www.masteringemacs.org/reading-guide
 *** Ido
     https://www.masteringemacs.org/article/introduction-to-ido-mode
     Mode for better auto-completion in the mini-buffer.
 **** TODO Need to go back and play with "ido-ignore-extensions"
+*** TODO Get TAGS set up
+    Article: https://www.masteringemacs.org/article/effective-editing-movement
    
 * Questions
 ** Git mode
